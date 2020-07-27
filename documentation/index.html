@@ -292,10 +292,6 @@
 &lt;!-- Smooth Scroll JS --&gt;
 &lt;script src=&quot;./assets/js/smooth-scroll.polyfills.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
 &lt;!-- Slick JS --&gt;
-&lt;script src=&quot;./assets/js/swiper-bundle.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;    
-&lt;!-- Wow JS --&gt;
-&lt;script src=&quot;./assets/js/wow.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;   
-&lt;!-- App JS --&gt;
 &lt;script src=&quot;./assets/js/app.js&quot;&gt;&lt;/script&gt;
 </pre
           >
@@ -338,12 +334,10 @@
           <div>
             <pre class="prettyprint lang-css linenums">
 :root {
-  --header-font: 'Poppins', serif;
-  --text-font: 'Poppins', sans-serif;
-  --nav-font: 'Poppins', sans-serif;
-  --portfolio-font: 'DM sans', sans-serif;
+  --header-font: 'Nunito', serif;
+  --text-font: 'Nunito', sans-serif;
   --primary-color: #e5e5e5;
-  --secondary-color: #650202;
+  
   --white-color: #fff;
 }</pre
             >
@@ -381,7 +375,7 @@
           image logo
         </p>
         <pre class="prettyprint lang-html linenums">
-&lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt; &lt;img src=&quot;./assets/img/logod.png<span style="font-family: Arial, Verdana, sans-serif;"></span><span style="font-family: Arial, Verdana, sans-serif;">&quot; alt=&quot;logo&quot; /&gt; &lt;/a&gt;</span>
+&lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt; &lt;img src=&quot;./assets/img/jumbo.png<span style="font-family: Arial, Verdana, sans-serif;"></span><span style="font-family: Arial, Verdana, sans-serif;">&quot; alt=&quot;logo&quot; /&gt; &lt;/a&gt;</span>
 </pre>
       </section>
       <section id="sliders">
@@ -389,151 +383,32 @@
           <h3>Sliders</h3>
           <hr class="notop" />
         </div>
-        <div>
-          Swiper slider is the slider you will find in the content. It's an easy
-          to use lightweight carousel with some decent features.
-        </div>
+
         <div>
           &nbsp;
         </div>
         <div>
           <div>
             <div>
-              Each Section slider has a class &#39;swiper-wrapper&#39; and each
-              slide has &#39;&lt;div class=&quot;swiper-slide&quot;&gt;&#39;
-              enclosing it. For easy access, find where slide html code begins.
-              To remove a slide, just remove div with all content like this
-              &#39;&lt;div class=&quot;swiper-slide&quot;&gt;&#39;
-            </div>
-            <div>
               &nbsp;
             </div>
           </div>
-          <pre class="prettyprint lang-html linenums">
+          <pre class="prettyprint lang-html linenums"></pre>
+          <div>
+            &nbsp;
+          </div>
 
-&lt;section class=&quot;container-fluid d-block d-md-none&quot; id=&quot;portfolio&quot;&gt;
-  &lt;h2 class=&quot;text-center font-family-1 py-5&quot;&gt;PORTFOLIO&lt;/h2&gt;
-  &lt;div class=&quot;swiper-container row mx-auto&quot;&gt;
-    &lt;div class=&quot;swiper-wrapper mb-5&quot;&gt;
-      &lt;div class=&quot;swiper-slide&quot;&gt;
-        &lt;img
-          src=&quot;./assets/img/room4.svg&quot;
-          alt=""
-          class=&quot;mx-auto img-fluid w-100&quot;
-        /&gt;
-        &lt;h3 class=&quot;font-family-3&quot;&gt;LIVING ROOM SETUP&lt;/h3&gt;
-        &lt;p class=&quot;font-family-3&quot;&gt;TEAM OF 4&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;swiper-slide&quot;&gt;
-        ...
-      &lt;/div&gt;
-      &lt;div class=&quot;swiper-slide&quot;&gt;
-        ...
-      &lt;/div&gt;
-      &lt;div class=&quot;swiper-slide&quot;&gt;
-        ...
-      &lt;/div&gt;
-      &lt;div class=&quot;swiper-slide&quot;&gt;
-      ...
-    &lt;/div&gt;
-  &lt;/div&gt;
-    <!-- Add Pagination -->
-    &lt;/div&gt;&quot;swiper-pagination&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;swiper-button-prev&quot;&gt;&lt;/div&gt;
-  &lt;div class=&quot;swiper-button-next&quot;&gt;&lt;/div&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
-
-</pre>
-          <div>
-            &nbsp;
-          </div>
-          <div>
-            If you want configure the sliders, open assets/js/app.js and find
-            &#1;// Our Sliders code Starts from line &#1; to line &#53; . Set
-            true/false for options what you wont to change. Set number variables
-            for screen views.
-          </div>
           <div>
             &nbsp;
           </div>
           <div>
             &nbsp;
           </div>
-          <pre class="prettyprint lang-js linenums">
-  // swiperjs
-  var swiper = new Swiper('.swiper-container', {
-    effect: 'coverflow',
-    grabCursor: true,
-    centeredSlides: false,
-    slidesToScroll: '1',
-    // slidesPerView: '2',
-    spaceBetween: 30,
-    coverflowEffect: {
-      rotate: 0,
-      stretch: 0,
-      depth:0,
-      modifier: 1,
-      slideShadows: false,
-    },
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    loop: true,
-    freeMode: true,
-    loopedSlides: 4,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-      256: {
-        slidesPerView: 1,
-        slidesToScroll: '1',
-        spaceBetween: 0,
-      },
-      576: {
-        slidesPerView: 1,
-        slidesToScroll: '1',
-        spaceBetween: 0,
-      },
-      768: {
-        slidesPerView: 1,
-        slidesToScroll: '1',
-        spaceBetween: 0,
-      },
-      992: {
-        slidesPerView: 2,
-        slidesToScroll: '1',
-        spaceBetween: 10,
-      },
-    }
-  });
-</pre
-          >
+          <pre class="prettyprint lang-js linenums"></pre>
         </div>
-        <p>
-          You can find more documentation here&nbsp;&lt;a
-          href=&quot;https://swiperjs.com/&quot; target="_blank"
-          &gt;https://swiperjs.com/&lt;/a &gt;
-        </p>
+        >
       </section>
       <section id="google_map">
-        <div class="page-header">
-          <h3>Google Map</h3>
-          <hr class="notop" />
-        </div>
-        <div>
-          The map used in the content is a google map embedded
-        </div>
-        <div>
-          <a href="https://www.google.ng/maps">https://www.google.ng/maps</a>
-        </div>
         <div>
           &nbsp;
         </div>
@@ -543,20 +418,7 @@
         <div>
           change&nbsp;
         </div>
-        <pre class="prettyprint lang-html linenums">
-change the src="https://www.google.com/maps/embed?pb=XXXXXXXX" url
-&lt;iframe
-  src=""
-  width="100%"
-  height="82%"
-  frameborder="0"
-  style="border: 0;"
-  allowfullscreen=""
-  aria-hidden="false"
-  tabindex="0"
-&gt;&lt;/iframe&gt;
-		</pre
-        >
+        <pre class="prettyprint lang-html linenums"></pre>
 
         <div>
           to
@@ -602,23 +464,13 @@ change the src="https://www.google.com/maps/embed?pb=XXXXXXXX" url
           >
         </div>
 
-        <div>
-          <strong>Slider</strong>&nbsp;2 -
-          <a href="https://swiperjs.com" target="_blank"
-            >https://swiperjs.com/</a
-          >
-        </div>
+        <div><strong>Slider</strong>&nbsp;2 -</div>
         <div>
           <strong>animate.css</strong> -&nbsp;<a href="animate.css"
             >http:animate.css</a
           >
         </div>
-        <div>
-          <strong>wow.js</strong> -&nbsp;<a
-            href="http://mynameismatthieu.com/WOW/"
-            >http://mynameismatthieu.com/WOW</a
-          >/
-        </div>
+        <div><strong>wow.js</strong> -&nbsp;</div>
         <div>
           <strong>Smooth Scroll</strong> -&nbsp;<a
             href="https://github.com/cferdinandi/smooth-scroll"
